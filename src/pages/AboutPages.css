@@ -1,0 +1,52 @@
+/* src/pages/AboutPages.css */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Ensure it spans the full viewport height */
+  background-color: #D7D9CE; /* Light background color */
+}
+
+.about-content {
+  display: flex;
+  align-items: stretch; /* Ensure children stretch to fill the height */
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; /* Ensure it spans the full height */
+  box-sizing: border-box;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #1A1D23; /* Background color for the text section */
+  color: #D7D9CE; /* Light text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text content vertically */
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.image-section {
+  flex: 0.70;
+  background-color: #0C7489; /* Different background color for the image section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure it spans the full height */
+  padding: 20px; /* Add padding to create margin around the image */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.charvi-image, .karan-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  border-radius: 8px;
+}

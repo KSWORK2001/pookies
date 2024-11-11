@@ -1,0 +1,75 @@
+/* src/pages/Timeline.css */
+.timeline-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #cbf6ff;
+    color: #FFF;
+  }
+  
+  .timeline-title {
+    text-align: top;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ff5eae;
+  }
+  
+  .event {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #F4F7F5;
+    cursor: pointer;
+    background-color: #13505B;
+  }
+  
+  .event:hover {
+    font-family: 'Pacifico', cursive;
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #119da4;
+  }
+  
+  .event-content {
+    font-family: 'Pacifico', cursive;
+    margin-left: 10px;
+    color: #fff
+  }
+  
+  .shape {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .shape.circle {
+    border-radius: 50%;
+  }
+  
+  .shape.heart {
+    width: 30px;
+    height: 30px;
+    background: url('./media/Heart.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .shape.diamond {
+    transform: rotate(45deg);
+  }
+  
+  .shape.star {
+    width: 30px;
+    height: 30px;
+    background: url('./media/Star.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  
