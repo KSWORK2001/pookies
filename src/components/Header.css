@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+.header {
+  position: fixed;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #040404;
+  opacity: 1;
+  font-family: 'Antonio', sans-serif;
+  color: #D7D9CE;
+  width: 50%;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header.translucent {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for desired translucency */
+}
+
+.names {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.names .charvi, .names .karan {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.names .charvi:hover {
+  transform: scale(1.2);
+  color: #ffa1b1;
+}
+
+.names .karan:hover {
+  transform: scale(1.2);
+  color: blue;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  position: relative;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #D7D9CE;
+  font-weight: normal;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D7D9CE;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #040404;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #D7D9CE;
+  white-space: nowrap;
+}
