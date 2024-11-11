@@ -1,0 +1,66 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #D7D9CE; /* Light background color */
+}
+
+.content {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-section {
+  background-color: #13505B; /* Darker background color */
+  border: 0px solid #13505B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  height: 100vh;
+}
+
+.main-title {
+  font-family: "Pacifico", cursive;
+  color: #D7D9CE; /* Light text color */
+  font-size: 66px;
+  margin-bottom: 40px;
+  transition: color 0.3s ease, font-size 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.main-paragraph {
+  font-family: "Playwrite DE Grund", cursive;
+  color: #D7D9CE; /* Light text color */
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  color: #D7D9CE; /* Light text color */
+  font-weight: normal;
+}
+
+audio {
+  display: none;
+}
+
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.video-container {
+  flex: 1 1 auto;
+  position: relative;
+}
